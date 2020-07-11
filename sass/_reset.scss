@@ -1,0 +1,36 @@
+* {
+  transition: 0.5s ease;
+}
+body {
+  font-family: $font-stock;
+  line-height: 1.091;
+}
+
+h1 {
+  @include text(#ffffff, 48px, 900);
+  @include trans-bgclr-line(uppercase, $primary-color, 1.4);
+}
+h2 {
+  @include text(#ffffff, 36px, 900);
+  @include trans-bgclr-line(uppercase, $secondary-color, 1.4);
+}
+h3 {
+  @include text($heading-color, 36px, 700);
+  @include trans-bgclr-line(capitalize, transparent, 1.4);
+}
+h4 {
+  @include text($secondary-color, 30px, 700);
+  @include trans-bgclr-line(capitalize, transparent, 1.4);
+}
+h5 {
+  @include text($heading-color, 22px, 700);
+  @include trans-bgclr-line(capitalize, transparent, 1.091);
+}
+h6 {
+  @include text(#ffffff, 20px, 700);
+  @include trans-bgclr-line(capitalize, transparent, 1.4);
+}
+p {
+  @include text($text-color, 14px, 500);
+  line-height: 1.5;
+}

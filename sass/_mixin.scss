@@ -1,0 +1,61 @@
+@mixin text($font-color, $font-size, $font-weight) {
+  color: $font-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  margin-bottom: 0;
+}
+@mixin border-poperty(
+  $background-color,
+  $border-size,
+  $border-color,
+  $border-radius
+) {
+  background-color: $background-color;
+  border: $border-size solid $border-color;
+  border-radius: $border-radius;
+}
+@mixin trans-bgclr-line($text-transform, $background-color, $line-height) {
+  text-transform: $text-transform;
+  background-color: $background-color;
+  line-height: $line-height;
+}
+
+@mixin section-porperty($bg-color, $padding-top, $padding-bottom) {
+  background-color: $bg-color;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+@mixin border-animation($bf-color, $br-color, $bt-color, $bb-color) {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    transition: 0.5s ease;
+    border-left: 5px solid $bf-color;
+    border-right: 5px solid $br-color;
+    transform: scaleY(0);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+    border-bottom: 5px solid $bt-color;
+    border-top: 5px solid $bb-color;
+    transform: scaleX(0);
+  }
+
+  &:hover::before {
+    transform: scaleY(1);
+  }
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,123 @@
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 575px) {
+  .top-header {
+    padding: 20px 0 30px 0;
+  }
+  .top-header .row {
+    justify-content: center !important;
+  }
+  .top-header .col-lg-8 {
+    display: none;
+  }
+  header nav {
+    text-align: center !important;
+  }
+  .navbar-color .btn-appointment {
+    margin-top: 25px;
+  }
+  .home-section .carousel-inner {
+    text-align: center;
+  }
+  .home-section .carousel-inner .title h2 {
+    font-size: 25px;
+  }
+  .home-section .carousel-inner .title h1 {
+    font-size: 30px;
+  }
+  .home-section .carousel-inner .title h2,
+  .home-section .carousel-inner .title h1 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .buttons .nav {
+    justify-content: center;
+  }
+  .heading {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .heading h3 {
+    font-size: 30px;
+  }
+  .agency-section .agency-content .content {
+    text-align: center;
+  }
+  .agency-section .agency-content .content {
+    margin-right: 0;
+  }
+  .doctors-section,
+  .services-section,
+  .pricing-plans-section {
+    padding-top: 25px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 767px) {
+  .top-header {
+    padding: 20px 0 30px 0;
+  }
+  .top-header .row {
+    justify-content: center !important;
+  }
+  .top-header .col-lg-8 {
+    display: none;
+  }
+  header nav {
+    text-align: center !important;
+  }
+  .navbar-color .btn-appointment {
+    margin-top: 25px;
+  }
+  .home-section .carousel-inner .title h2 {
+    font-size: 30px;
+  }
+  .home-section .carousel-inner .title h1 {
+    font-size: 35px;
+  }
+  .home-section .carousel-inner {
+    text-align: center;
+  }
+  .buttons .nav {
+    justify-content: center;
+  }
+  .agency-section .heading h3 {
+    font-size: 32px;
+  }
+  .agency-section .row {
+    justify-content: center !important;
+    margin-top: 30px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 991px) {
+  .top-header .col-lg-3.col-md-5 {
+    display: none;
+  }
+  header nav {
+    text-align: center !important;
+  }
+  .navbar-color .btn-appointment {
+    margin-top: 25px;
+  }
+  .home-section .carousel-inner .title h2 {
+    font-size: 23px;
+  }
+  .home-section .carousel-inner .title h1 {
+    font-size: 29px;
+  }
+  .home-section .carousel-inner .title h2,
+  .home-section .carousel-inner .title h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .agency-section .row {
+    justify-content: center !important;
+  }
+  .heading {
+    margin-bottom: 35px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 1199px) {
+}
